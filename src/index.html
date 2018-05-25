@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>Caesar Cipher</title>
-  <link rel="stylesheet" href="style.css" />
+	<meta charset="utf-8">
+	<title>Caesar Cipher</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
-  <div id="root"></div>
-
-  <script src="cipher.js"></script>
-  <script src="index.js"></script>
+	<center><h1>Caesar Cipher</h1>
+	<div id="welcomeMessage">
+		Bienvenido/a a la página de cifrado césar, donde podrás cifrar o descifrar tus mensajes para tu chat secreto.<br><br><br><br>
+	</div>
+		<div id="cipherDecipherBox">
+			<textarea id="decipherText" rows="4" cols="50" onfocus="cipherFocus()">Ingresa tu mensaje para descifrar.
+			</textarea><br>
+			<button id="cipherMessage" class="buttons" onclick="cipherFunction()">Cifrar Mensaje</button>
+			<button id="decipherMessage" class="buttons" onclick="decipherFunction()">Descifrar Mensaje</button>
+		</div>
+	</div>
+	<div id="message">
+	</div>
+	<footer>
+     <p>Página hecha por Valentina Gutiérrez para © Laboratoria 2018 <br>
+  	 Contacto: <a href="mailto:vale.gutierrezc@gmail.com">vale.gutierrezc@gmail.com</a></p>
+    </footer>
+    </center>
+    <script src="cipher.js"></script>
+	<script src="app.js"></script>
 </body>
 </html>
