@@ -11,10 +11,11 @@
 		Bienvenido/a a la página de cifrado césar, donde podrás cifrar o descifrar tus mensajes para tu chat secreto.<br><br><br><br>
 	</div>
 		<div id="cipherDecipherBox">
-			<textarea id="decipherText" rows="4" cols="50" onfocus="cipherFocus()">Ingresa tu mensaje para descifrar.
-			</textarea><br>
-			<button id="cipherMessage" class="buttons" onclick="cipherFunction()">Cifrar Mensaje</button>
-			<button id="decipherMessage" class="buttons" onclick="decipherFunction()">Descifrar Mensaje</button>
+			Desplazamiento:<br>
+			<input id="number" type="number"><br>
+			<textarea id="cipherDecipherText" rows="4" cols="50">Ingresa tu mensaje.</textarea><br><br>
+			<input type="button" class="buttons" onclick="cipherFunction()" value="Cifrar Mensaje"></input>
+			<input type="button" class="buttons" onclick="decipherFunction()" value="Descifrar Mensaje"></input>
 		</div>
 	</div>
 	<div id="message">
@@ -25,6 +26,6 @@
     </footer>
     </center>
     <script src="cipher.js"></script>
-	<script src="app.js"></script>
+	<script src="index.js"></script>
 </body>
 </html>
