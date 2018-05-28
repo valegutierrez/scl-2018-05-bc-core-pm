@@ -7,12 +7,15 @@ function cipherFunction() {
 	// saca el valor de la caja de texto y la vuelve variable
 	if (offset=="") {
 		alert("No se ha ingresado la cantidad de desplazamientos.");
+		// evita que no se ingrese desplazamiento
 	}
 	else if (offset==0) {
 		alert("El número de desplazamientos no puede ser igual a 0.");
+		
 	}
 	else {
 		resultMessage.innerHTML = cipher.encode(string,offset);
+		// imprime el mensaje cifrado en el HTML
 	}
 }
 function decipherFunction() {
@@ -22,11 +25,14 @@ function decipherFunction() {
 	// saca el valor de la caja de texto y la vuelve variable
 	if (offset=="") {
 		alert("No se ha ingresado la cantidad de desplazamientos.");
+		// evita que no se ingrese desplazamiento
 	}
 	else if (offset==0) {
 		alert("El número de desplazamientos no puede ser igual a 0.");
+		// evita que el desplazamiento sea igual a 0
 	}
 	else {
 		resultMessage.innerHTML = cipher.decode(string,offset);
+		//imprime el mensaje descifrado en el HTML
 	}
 }
