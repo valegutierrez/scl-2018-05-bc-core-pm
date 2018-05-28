@@ -7,15 +7,18 @@ window.cipher = {
 			case 32:
 			case 44:
 			case 46:
+			case 13:
 				ciphered += String.fromCharCode(asciiCode);
-				// excepción con el espacio, coma y punto
+				// excepción con el espacio, coma, punto y enter
 				continue;
 		}
 		if (asciiCode>=97&&asciiCode<=122) {
-			ciphered += String.fromCharCode((asciiCode  - 97 + offset) % 26 + 97);
+			let asciiEncode = (asciiCode  - 97 + offset) % 26;
+			ciphered += String.fromCharCode(asciiEncode + 97);
 		}
 		else if (asciiCode>=65&&asciiCode<=90) {
-			ciphered += String.fromCharCode((asciiCode  - 65 + offset) % 26 + 65);
+			let asciiEncode = (asciiCode  - 65 + offset) % 26;
+			ciphered += String.fromCharCode(asciiEncode + 65);
 		}
 		else {
 			alert("Caracter no válido");
@@ -33,8 +36,9 @@ window.cipher = {
 			case 32:
 			case 44:
 			case 46:
+			case 13:
 				deciphered += String.fromCharCode(asciiCode);
-				// excepción con el espacio, coma y punto
+				// excepción con el espacio, coma, punto y enter
 				continue;
 		}
 		if (asciiCode>=97&&asciiCode<=122) {
@@ -59,4 +63,4 @@ window.cipher = {
 	console.log(deciphered);
 	return deciphered;
   }
-};
+}
