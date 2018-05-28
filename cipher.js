@@ -1,5 +1,5 @@
 window.cipher = {
-  encode: (offset, string) => {
+  encode: (string, offset) => {
 	let ciphered = "";
 	for (let index = 0; index < string.length; index++) {
 		let asciiCode = string.charCodeAt(index);
@@ -16,7 +16,6 @@ window.cipher = {
 		}
 		else if (asciiCode>=65&&asciiCode<=90) {
 			ciphered += String.fromCharCode((asciiCode  - 65 + offset) % 26 + 65);
-			console.log(ciphered);
 		}
 		else {
 			alert("Caracter no válido");
@@ -24,8 +23,9 @@ window.cipher = {
 		}
 	}
 	return ciphered;
+	console.log(ciphered);
   },
-  decode: (offset, string) => {
+  decode: (string, offset) => {
 	let deciphered = "";
 	for (let index = 0; index < string.length; index++) {
 		let asciiCode = string.charCodeAt(index);
@@ -39,27 +39,24 @@ window.cipher = {
 		}
 		if (asciiCode>=97&&asciiCode<=122) {
 			let asciiDecode = (asciiCode  - 97 - offset) % 26;
-			if (asciiDecode >= 0) {
+			if (asciiDecode < 0) {
 				asciiDecode += 26;
-				deciphered += String.fromCharCode(asciiDecode + 97);
 			}
 			deciphered += String.fromCharCode(asciiDecode + 97);
 		}
 		else if (asciiCode>=65&&asciiCode<=90) {
-			deciphered += String.fromCharCode((asciiCode  - 65 - offset) % 26 + 65);
-			console.log(deciphered);
+			let asciiDecode = (asciiCode  - 65 - offset) % 26;
+			if (asciiDecode < 0) {
+				asciiDecode += 26;
+			}
+			deciphered += String.fromCharCode(asciiDecode + 65);
 		}
 		else {
 			alert("Caracter no válido");
 			break;
 		}
 	}
+	console.log(deciphered);
 	return deciphered;
   }
-}
-
-a = 65
-z = 90
-z - a = 25
-a - 1 = 64 + 26 = 90
-a - 2 = 63 + 26 = 89
+};
