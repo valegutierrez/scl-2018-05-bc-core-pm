@@ -12,7 +12,7 @@ function cipherFunction() {
 		alert("El número de desplazamientos no puede ser igual a 0.");
 	}
 	else {
-		resultMessage.innerHTML = cipher.encode(offset,string);
+		resultMessage.innerHTML = cipher.encode(string,offset);
 	}
 }
 function decipherFunction() {
@@ -27,6 +27,6 @@ function decipherFunction() {
 		alert("El número de desplazamientos no puede ser igual a 0.");
 	}
 	else {
-		resultMessage.innerHTML = cipher.decode(offset,string);
+		resultMessage.innerHTML = cipher.decode(string,string);
 	}
 }
