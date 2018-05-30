@@ -6,13 +6,15 @@ html {
 	font-size: 14px;
 }
 img {
-	position: relative;
-	width: 50%;
+	top: 0;
+	left: 30%;
+	width: 40%;
+	position: absolute;
 }
 #textBox {
 	margin: 5%;
 	padding: 10px;
-	position: relative;
+	position: static;
 	display: block;
 	background-color: white;
 	width: 50%;
@@ -21,6 +23,13 @@ h1 {
 	font-size: 40px;
 	font-weight: 300;
 	color: #ff977a;
+}
+ul {
+	text-align: justify;
+	width: 50%;
+}
+#welcomeMessage {
+	margin: 10px;
 }
 #askUser {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
