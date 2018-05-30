@@ -1,9 +1,9 @@
 const resultMessage = document.getElementById("message");
 // avisa dónde irá el mensaje una vez realizada la función más conveniente
 function cipherFunction() {
-	const offset = parseInt(document.getElementById("number").value);
+	let offset = parseInt(document.getElementById("number").value);
 	// saca el valor de la caja de desplazamiento y la vuelve variable
-	const string = document.getElementById("cipherDecipherText").value;
+	let string = document.getElementById("cipherText").value;
 	// saca el valor de la caja de texto y la vuelve variable
 	if (offset=="") {
 		alert("No se ha ingresado la cantidad de desplazamientos.");
@@ -14,14 +14,14 @@ function cipherFunction() {
 		
 	}
 	else {
-		resultMessage.innerHTML = cipher.encode(string,offset);
+		document.getElementById("decipherText").value = cipher.encode(string,offset);
 		// imprime el mensaje cifrado en el HTML
 	}
 }
 function decipherFunction() {
-	const offset = parseInt(document.getElementById("number").value);
+	let offset = parseInt(document.getElementById("number").value);
 	// saca el valor de la caja de desplazamiento y la vuelve variable
-	const string = document.getElementById("cipherDecipherText").value;
+	let string = document.getElementById("decipherText").value;
 	// saca el valor de la caja de texto y la vuelve variable
 	if (offset=="") {
 		alert("No se ha ingresado la cantidad de desplazamientos.");
@@ -32,7 +32,7 @@ function decipherFunction() {
 		// evita que el desplazamiento sea igual a 0
 	}
 	else {
-		resultMessage.innerHTML = cipher.decode(string,offset);
+		document.getElementById("cipherText").value = cipher.decode(string,offset);
 		//imprime el mensaje descifrado en el HTML
 	}
 }
