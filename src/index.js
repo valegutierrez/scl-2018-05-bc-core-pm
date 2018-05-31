@@ -36,3 +36,13 @@ function decipherFunction() {
 		//imprime el mensaje descifrado en el HTML
 	}
 }
+function copyCipher() {
+	cipherText.select();
+    document.execCommand("copy");
+}
+// función para copiar el texto 
+function copyDecipher() {
+	decipherText.select();
+    document.execCommand("copy");
+}
+// función para copiar el texto
