@@ -1,5 +1,3 @@
-const resultMessage = document.getElementById("message");
-// avisa dónde irá el mensaje una vez realizada la función más conveniente
 function cipherFunction() {
 	let offset = parseInt(document.getElementById("number").value);
 	// saca el valor de la caja de desplazamiento y la vuelve variable
@@ -36,6 +34,16 @@ function decipherFunction() {
 		//imprime el mensaje descifrado en el HTML
 	}
 }
+function withOffsetCipher() {
+	let string = document.getElementById("withOffsetText").value;
+	// saca el valor de la caja de texto y la vuelve variable
+	document.getElementById("withOffsetText").value = cipher.createCipherWithOffset(offset).encode(string);
+}
+function withOffsetDecipher() {
+	let string = document.getElementById("withOffsetText").value;
+	// saca el valor de la caja de texto y la vuelve variable
+	document.getElementById("withOffsetText").value = cipher.createCipherWithOffset(offset).decode(string);
+}
 function copyCipher() {
 	cipherText.select();
     document.execCommand("copy");
@@ -46,3 +54,7 @@ function copyDecipher() {
     document.execCommand("copy");
 }
 // función para copiar el texto
+function copyWithOffset() {
+	withOffsetText.select();
+    document.execCommand("copy");
+}

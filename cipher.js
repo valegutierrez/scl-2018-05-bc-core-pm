@@ -156,13 +156,5 @@ window.cipher = {
 		return object;
 	}
 }
-let offset = parseInt(document.getElementById("number").value);
-// saca el valor de la caja de desplazamiento y la vuelve variable
-let stringOne = document.getElementById("cipherText").value;
-// saca el valor de la caja de texto y la vuelve variable
-let stringTwo = document.getElementById("decipherText").value;
-// saca el valor de la caja de texto y la vuelve variable
-cipher.createCipherWithOffset(offset).encode(stringOne);
-// activa la función de createCipherWithOffset con el método de encode
-cipher.createCipherWithOffset(offset).decode(stringTwo);
-// activa la función de createCipherWithOffset con el método de decode
+const offset = 12;
+// crea una variable con numero definido

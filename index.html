@@ -22,17 +22,23 @@
 				</p><br>
 			</div>
 			<div id="cipherDecipherBox">
-					Desplazamiento:<br>
-					<input id="number" type="number" min="1" max="64" value="1"><br><br>
-					Cifrado:<br>
-					<textarea id="cipherText" rows="4" cols="50">Ingresa tu mensaje para cifrar.</textarea><br>
-					<button class="buttons" onclick="cipherFunction()">Cifrar Mensaje</button>
-					<button class="buttons" onclick="copyCipher()"><i class="fas fa-copy"></i> Copiar</button>
-					<br><br>
-					Descifrado:<br>
-					<textarea id="decipherText" rows="4" cols="50">Johsftb uv nfotbkf qbsb djgsbs.</textarea><br>
-					<button class="buttons" onclick="decipherFunction()">Descifrar Mensaje</button>
-					<button class="buttons" onclick="copyDecipher()"><i class="fas fa-copy"></i> Copiar</button>
+				Desplazamiento:<br>
+				<input id="number" type="number" min="1" max="64" value="1"><br><br>
+				Cifrado:<br>
+				<textarea id="cipherText" rows="4" cols="50">Ingresa tu mensaje para cifrar.</textarea><br>
+				<button class="buttons" onclick="cipherFunction()">Cifrar Mensaje</button>
+				<button class="buttons" onclick="copyCipher()"><i class="fas fa-copy"></i> Copiar</button>
+				<br><br>
+				Descifrado:<br>
+				<textarea id="decipherText" rows="4" cols="50">Johsftb uv nfotbkf qbsb djgsbs.</textarea><br>
+				<button class="buttons" onclick="decipherFunction()">Descifrar Mensaje</button>
+				<button class="buttons" onclick="copyDecipher()"><i class="fas fa-copy"></i> Copiar</button>
+				<br><br>
+				Mensaje con desplazamiento definido:<br>
+				<textarea id="withOffsetText" rows="4" cols="50"></textarea><br>
+				<button class="buttons" onclick="withOffsetCipher()">Cifrar</button>
+				<button class="buttons" onclick="withOffsetDecipher()">Descifrar</button>
+				<button class="buttons" onclick="copyWithOffset()"><i class="fas fa-copy"></i> Copiar</button>
 			</div>
 			<div id="message">
 			</div>
