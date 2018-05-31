@@ -2,19 +2,13 @@
 
 ## Descripción del proyecto
 
-El proyecto se basa en crear una página web que transforme los mensajes entregados por el usuario en
-cifrado césar. Asimismo, una vez entregado el mensaje cifrado, este puede volver a descifrarse mediante
-otra caja de texto disponible en el `HTML`.
+El proyecto se basa en crear una página web que transforme los mensajes entregados por el usuario en cifrado césar. Asimismo, una vez entregado el mensaje cifrado, este puede volver a descifrarse mediante otra caja de texto disponible en el `HTML`.
 
-Mi solución ante el desafío de la página web, fue incluír dos cajas de texto (una para cifrar
-y otra para descifrar) con sus botones correspondientes para ejecutar las funciones y donde se imprima el 
-mensaje en la caja paralela a la que se usó. Además, añadir estilos en `CSS` que volvieran la página más amigable
-para el usuario. En el `HTML` se incluyen instrucciones de su funcionamiento.
+Mi solución ante el desafío de la página web, fue incluír dos cajas de texto (una para cifrar y otra para descifrar) con sus botones correspondientes para ejecutar las funciones y donde se imprima el mensaje en la caja paralela a la que se usó. Además, añadí una última caja de texto que transforma un mensaje a cifrado o descifrado con desplazamiento definido. Todas estas opciones incluyen un botón de copiado para comodidad del usuario y el `CSS` adaptado de manera que todo fuese más amigable.
 
 Para acceder directamente a la página de cifrado césar, haz click [aquí.](https://valegutierrez.github.io/scl-2018-05-bc-core-pm/)
 
-Para explicar cómo funciona el cifrado césar en este caso, añadiremos un poco de explicación
-detrás de ello.
+Para explicar cómo funciona el cifrado césar en este caso, añadiremos un poco de explicación detrás de ello.
 
 ## Introducción
 
@@ -49,7 +43,6 @@ Requisitos:
 * Instalar `npm` con el comando `npm install`
 * Instalar `mocha` con el comando `npm install --global mocha`
 
-Con esto, podemos comprobar que la carpeta `test` funcione de manera correcta. Para probarla,
-se puede acceder a `/test/index.html`
+Con esto, podemos comprobar que la carpeta `test` funcione de manera correcta. Para probarla, se puede acceder a `/test/index.html`
 
 La página del cifrado césar puede ser accedida desde `/src/index.html`
