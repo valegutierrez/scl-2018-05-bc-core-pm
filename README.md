@@ -11,7 +11,7 @@ y otra para descifrar) con sus botones correspondientes para ejecutar las funcio
 mensaje en la caja paralela a la que se usó. Además, añadir estilos en `CSS` que volvieran la página más amigable
 para el usuario. En el `HTML` se incluyen instrucciones de su funcionamiento.
 
-Para acceder directamente a la página de cifrado césar, haz click [aquí.]
+Para acceder directamente a la página de cifrado césar, haz click [aquí.](https://valegutierrez.github.io/scl-2018-05-bc-core-pm/)
 
 Para explicar cómo funciona el cifrado césar en este caso, añadiremos un poco de explicación
 detrás de ello.
@@ -45,7 +45,7 @@ sistema ROT13.
 Se puede hacer descarga de un `ZIP` con todos los archivos apretando el link de 
 **Clone or download** en Github y descomprimir el archivo.
 Requisitos:
-* El usuario debe tener instalado previamente `Node.js`
+* El usuario debe tener instalado previamente [Node.js](https://nodejs.org/en/)
 * Instalar `npm` con el comando `npm install`
 * Instalar `mocha` con el comando `npm install --global mocha`
 
