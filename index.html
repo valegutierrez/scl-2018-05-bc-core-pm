@@ -3,53 +3,54 @@
 <head>
 	<meta charset="utf-8">
 	<title>Caesar Cipher</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="web-fonts-with-css/css/fontawesome-all.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
 <body>
-	<center>
-		<img src="doggos.gif">
-		<div id="textBox"><h1>Caesar Cipher</h1>
-			<div id="welcomeMessage">
-				Bienvenido/a a la página de cifrado césar, donde podrás cifrar o descifrar tus mensajes para tu chat secreto.
-				<p>Instrucciones:<br>
-					<ul>
-						<li>Ingresa la cantidad de desplazamientos para cifrar o descifrar tu mensaje.</li>
-						<li>Luego, ingresa tu mensaje a cifrar o descifrar en su caja de texto correspondiente.</li>
-						<li>Finalmente, apreta el botón para recibir tu mensaje cifrado/descifrado en la otra caja de texto.</li>
-					</ul>
-				</p><br>
-			</div>
-			<div id="cipherDecipherBox">
-				Desplazamiento:<br>
+	<div class="container">
+		<div class="row justify-content-md-center">
+			<div class ="col-md-8 mt-5 mb-5">
+				<h1 class="text-center">Caesar Cipher</h1>
+				<img class="img-fluid mx-auto" src="doggos.gif">
+				<p>Bienvenido/a a la página de cifrado césar, donde podrás cifrar o descifrar tus mensajes para tu chat secreto.</p>
+				Instrucciones:
+				<ul>
+					<li>Ingresa la cantidad de desplazamientos para cifrar o descifrar tu mensaje.</li>
+					<li>Luego, ingresa tu mensaje a cifrar o descifrar en su caja de texto correspondiente.</li>
+					<li>Finalmente, apreta el botón para recibir tu mensaje cifrado/descifrado en la otra caja de texto.</li>
+				</ul>
+				Desplazamiento:
 				<input id="number" type="number" min="1" max="64" value="1"><br><br>
 				Cifrado:<br>
-				<textarea id="cipherText" rows="4" cols="50">Ingresa tu mensaje para cifrar.</textarea><br>
+				<textarea id="cipherText" class="form-control">Ingresa tu mensaje para cifrar.</textarea><br>
 				<button class="buttons" onclick="cipherFunction()">Cifrar Mensaje</button>
 				<button class="buttons" onclick="copyCipher()"><i class="fas fa-copy"></i> Copiar</button>
 				<br><br>
 				Descifrado:<br>
-				<textarea id="decipherText" rows="4" cols="50">Johsftb uv nfotbkf qbsb djgsbs.</textarea><br>
+				<textarea id="decipherText" class="form-control">Johsftb uv nfotbkf qbsb djgsbs.</textarea><br>
 				<button class="buttons" onclick="decipherFunction()">Descifrar Mensaje</button>
 				<button class="buttons" onclick="copyDecipher()"><i class="fas fa-copy"></i> Copiar</button>
 				<br><br>
 				Mensaje con desplazamiento definido:<br>
-				<textarea id="withOffsetText" rows="4" cols="50"></textarea><br>
+				<textarea id="withOffsetText" class="form-control"></textarea><br>
 				<button class="buttons" onclick="withOffsetCipher()">Cifrar</button>
 				<button class="buttons" onclick="withOffsetDecipher()">Descifrar</button>
 				<button class="buttons" onclick="copyWithOffset()"><i class="fas fa-copy"></i> Copiar</button>
+				<footer>
+					<p class="text-center">Página hecha por Valentina Gutiérrez para © Laboratoria 2018 <br>
+					<i class="fas fa-envelope"></i>
+					<a href="mailto:vale.gutierrezc@gmail.com">vale.gutierrezc@gmail.com</a><br>
+					Pixelart por Paul Robertson.
+					</p>
+				</footer>
 			</div>
-			<footer>
-	    	 <p>Página hecha por Valentina Gutiérrez para © Laboratoria 2018 <br>
-				<i class="fas fa-envelope"></i>
-				<a href="mailto:vale.gutierrezc@gmail.com">vale.gutierrezc@gmail.com</a><br>
-			   Pixelart por Paul Robertson.
-			</p>
-			</footer>
 		</div>
-    </center>
-   	<script src="index.js"></script>
-    <script src="cipher.js"></script>
+	</div>
+		
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="index.js"></script>
+	<script src="cipher.js"></script>
 </body>
 </html>
