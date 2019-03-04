@@ -1,44 +1,19 @@
-html {
+body {
 	background-image: url("pink-pattern.jpg");
 	background-repeat: repeat;
 	background-attachment: fixed;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 14px;
 }
-img {
-	top: 0;
-	left: 30%;
-	width: 40%;
-	position: absolute;
-}
-#textBox {
-	margin: 5%;
-	padding: 10px;
-	position: static;
-	display: block;
+.col-md-8 {
 	background-color: white;
-	width: 50%;
 }
 h1 {
-	font-size: 40px;
 	font-weight: 300;
 	color: #ff977a;
-}
-ul {
-	text-align: justify;
-	width: 50%;
-}
-#welcomeMessage {
-	margin: 10px;
 }
 #askUser {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #ff977a;
 	font-weight: bold;
-}
-#cipherDecipherBox {
-	align-content: center;
-	margin: 40px;
 }
 a {
 	color: #ff977a;
